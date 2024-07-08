@@ -1,0 +1,32 @@
+.button {
+    transition: all .3s;
+
+    &--white {
+        @include button(white, 312px, 60px, 1rem);
+    }
+
+    &--black {
+        @include button(black, 312px, 60px, 1rem);
+        margin-top: 60px;
+    }
+
+    &:hover {
+        color: white;
+        background-color: $button-color;
+        border-color: $button-color;
+        transform: scale(1.2);
+    }
+}   
+
+@media screen and (max-width: 1024px) {
+    .button {
+        &--white {
+            @include button(white, 248px, 48px, .85rem);
+        }
+    
+        &--black {
+            @include button(black, 248px, 48px, .85rem);
+            margin-top: 45px;
+        }
+    } 
+}

@@ -1,0 +1,36 @@
+@mixin sticker($content, $color, $size, $text-size) {
+    content: $content;
+    position: absolute;
+    font-size: $text-size;
+    font-weight: 600;
+    color: #fff;
+    background-color: $color;
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    text-align: center;
+    top: -$size/2;
+    left: -$size/2;
+}
+
+@mixin button($color, $width, $height, $text-size) {
+    display: block;
+    font-size: $text-size;
+    font-weight: 600;
+    color: $color;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    border: 2px solid $color;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+@mixin round-button($size, $color) {
+    width: $size;
+    height: $size;
+    background-color: $color;
+    border-radius: 50%;
+}
+
