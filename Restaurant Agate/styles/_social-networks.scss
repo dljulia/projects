@@ -1,0 +1,56 @@
+.social-networks {
+    margin-top: 60px;
+
+    &__item {
+        @include round-button(50px, #fff);
+        display: inline-block;
+        position: relative;
+        transition: transform .3s;
+
+        i {
+            color: #262626;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:first-child {
+            i {
+                font-size: 30px;
+            }
+        }
+
+        &:nth-child(2) {
+            i {
+                font-size: 23px;
+            }
+        }
+
+        &:last-child {
+            i {
+                font-size: 21px;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .social-networks {
+        margin-top: 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-networks {
+        margin-top: 35px;
+    }
+}

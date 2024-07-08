@@ -1,0 +1,36 @@
+.contacts {
+    background-color: $second-bg-color;
+    color: $primary-text-color;
+
+    &__heading {
+        font-size: 3.25rem;
+    }
+
+    &__work-time {
+        color: #B1B1B1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        &__heading {
+            font-size: 2.5rem;
+        }
+    
+        &__work-time {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__heading {
+            font-size: 2rem;
+        }
+    
+        &__work-time {
+            font-size: .9rem;
+        }
+    }
+}

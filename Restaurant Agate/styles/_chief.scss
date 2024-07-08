@@ -1,0 +1,56 @@
+.chief {
+    background-color: $bg-color;
+
+    &__photo {
+        img {
+            max-width: 398px;
+            width: 100%;    
+        }
+    }
+
+    &__name {
+        margin: 30px 0;
+    }
+
+    &__status {
+        color: #474747;
+    }
+
+    &__text {
+        max-width: 939px;
+        margin: 30px auto 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chief {
+        &__photo {
+            img {
+                max-width: 282px; 
+            }  
+        }
+
+        &__text {
+            max-width: 691px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chief {
+        &__photo {
+            img {
+                max-width: 251px; 
+            } 
+        }
+    
+        &__name {
+            margin: 20px 0;
+        }
+    
+        &__text {
+            max-width: 626px;
+            margin-top: 20px;
+        }
+    }
+}

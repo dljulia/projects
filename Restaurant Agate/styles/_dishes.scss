@@ -1,0 +1,43 @@
+.dishes {
+    max-width: 1176px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1240px) {
+    .dishes {
+        max-width: 906px;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes {
+        max-width: 940px;
+    } 
+}
+
+@media screen and (max-width: 995px) {
+    .dishes {
+        max-width: 710px;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .dishes {
+        max-width: 692px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .dishes {
+        max-width: 500px;
+    } 
+}
+
+@media screen and (max-width: 550px) {
+    .dishes {
+        max-width: 300px;
+    } 
+}
