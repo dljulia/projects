@@ -1,0 +1,169 @@
+.tariff-card {
+  width: calc(100% / 3);
+  max-width: 364px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .15);
+  padding: 40px 0;
+
+  &:nth-child(2) {
+    position: relative;
+    max-width: 376px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .2);
+    padding: 61px 0;
+
+    &::before {
+      @include sale-icon32;
+    }
+  }
+
+  &__title {
+    color: #3a3a3a;
+  }
+
+  &__price {
+    display: block;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 25px 0 30px;
+  }
+
+  &__content {
+    color: #3e3e3e;
+    list-style-type: none;
+    margin-bottom: 38px;
+  }
+
+  &:first-child {
+    .tariff-card__content {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__content-item {
+    font-size: .8rem;
+    font-weight: 400;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .tariff-card {
+    max-width: 320px;
+  
+    &:nth-child(2) {
+      max-width: 330px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tariff-card {
+    max-width: 300px;
+  
+    &:nth-child(2) {
+      max-width: 300px;
+      padding: 60px 0;
+    }
+  
+    &__price {
+      font-size: 1.9rem;
+      margin-top: 30px;
+    }
+  
+    &__content {
+      margin-bottom: 30px;
+    }
+  
+    &:first-child {
+      .tariff-card__content {
+        margin-bottom: 88px;
+      }
+    }
+  
+    &__content-item {
+      font-size: .7rem;
+    }
+
+    &__button {
+      @include button46;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .tariff-card {
+    max-width: 230px;
+  
+    &:nth-child(2) {
+      max-width: 260px;
+    }
+  
+    &__price {
+      font-size: 1.5rem;
+    }
+
+    &:first-child {
+      .tariff-card__content {
+        margin-bottom: 70px;
+      }
+    }
+  
+    &__content-item {
+      font-size: .65rem;
+    }
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .tariff-card {
+    width: 100%;
+    max-width: 580px;
+  
+    &:nth-child(2) {
+      max-width: 580px;
+      padding: 40px 0;
+      
+      &::before {
+        @include sale-icon44;
+      }
+    }
+
+    &__price {
+      font-size: 1.9rem;
+    }
+  
+    &__content {
+      margin-bottom: 40px;
+    }
+  
+    &:first-child {
+      .tariff-card__content {
+        margin-bottom: 40px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &__content-item {
+      font-size: .7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tariff-card {
+    max-width: 350px;
+
+    &:nth-child(2) {
+      max-width: 350px;
+    }
+  }
+}
+
+

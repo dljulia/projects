@@ -1,0 +1,25 @@
+.our-tariffs {
+  background-color: $bg-color;
+
+  &__text {
+    margin: 30px auto 40px;
+    max-width: 532px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .our-tariffs {
+    &__text {
+      margin: 40px auto 60px;
+      max-width: 594px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-tariffs {
+    &__text {
+      margin: 35px auto 55px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.about-studio {
+  background-color: $bg-color;
+
+  &__image {
+    margin: 30px 0;
+
+    img {
+      width: 100%;
+      max-width: 760px;
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-studio {
+    &__image {
+      margin: 40px 0;
+  
+      img {
+        max-width: 636px;
+      }
+    }
+  
+    &__description {
+      font-size: .9rem;
+      max-width: 636px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-studio {
+    &__image {
+      margin: 35px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-studio {
+    &__image {
+      img {
+        max-width: 350px;
+      }
+    }
+  
+    &__description {
+      font-size: .75rem;
+      max-width: 350px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.tariffs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1176px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1195px) {
+  .tariffs {
+    max-width: 1020px;
+  } 
+}
+
+@media screen and (max-width: 1024px) {
+  .tariffs {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .tariffs {
+    max-width: 760px;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .tariffs {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tariffs {
+    max-width: 350px;
+  }
+}

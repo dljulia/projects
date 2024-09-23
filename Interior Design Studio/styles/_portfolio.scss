@@ -1,0 +1,29 @@
+.portfolio {
+  &__text {
+    margin: 30px 0 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio {
+    &__text {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    &__text {
+      margin: 35px 0 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .portfolio {
+    &__text {
+      margin: 25px 0 45px;
+    }
+  }
+}

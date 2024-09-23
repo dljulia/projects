@@ -1,0 +1,30 @@
+.scroll-up {
+  @include round-button(65px, $main-color);
+  opacity: .7;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.1) translateY(-15px);
+    opacity: 1;
+  }
+
+  i {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+  }
+}
