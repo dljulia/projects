@@ -1,0 +1,21 @@
+.how-we-work {
+  &__title {
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .how-we-work {
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .how-we-work {
+    &__title {
+      margin-bottom: 35px;
+    }
+  }
+}

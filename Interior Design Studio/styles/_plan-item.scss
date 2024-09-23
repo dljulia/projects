@@ -1,0 +1,109 @@
+.plan-item {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: space-between;
+  
+  &__icon {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  &:first-child {
+    .plan-item__icon {
+      background-image: url(../img/sketch_icon.png);  
+    }
+  }
+
+  &:nth-child(2) {
+    .plan-item__icon {
+      background-image: url(../img/vizualization_icon.png);
+    }
+  }
+
+  &:nth-child(3) {
+    .plan-item__icon {
+      background-image: url(../img/documentation_icon.png);
+    }
+  }
+
+  &:nth-child(4) {
+    .plan-item__icon {
+      background-image: url(../img/control_icon.png);    
+    }
+  }  
+
+  &:not(:nth-child(4)) {
+    .plan-item__icon::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 52px;
+      height: 1px;
+      background-color: #b3b3b3;
+      transform: rotate(90deg);
+      left: 24px;
+      top: 126px; 
+    }
+  }  
+
+  &__description {
+    max-width: 679px;
+  }
+
+  &__text {
+    font-size: .75rem;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+  
+  &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .plan-item {     
+    align-items: center;
+
+    &__description {
+      max-width: 541px;
+    }
+  
+    &__text {
+      font-size: .7rem;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plan-item {     
+    &__description {
+      max-width: 532px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .plan-item {      
+    &__description {
+      max-width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .plan-item {      
+    &__description {
+      max-width: 250px;
+    }
+
+    &__text {
+      font-size: .6rem;
+      margin-top: 10px;
+    }
+  }
+}

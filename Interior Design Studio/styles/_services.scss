@@ -1,0 +1,20 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1183px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 580px;
+  }
+}

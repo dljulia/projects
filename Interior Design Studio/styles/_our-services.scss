@@ -1,0 +1,22 @@
+.our-services {
+  &__text {
+    max-width: 580px;
+    margin: 30px auto 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .our-services {
+    &__text {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-services {
+    &__text {
+      margin: 35px auto 55px;
+    }
+  }
+}

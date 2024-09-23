@@ -1,0 +1,56 @@
+@mixin button60($color, $border-color) {
+  display: block;
+  font-size: .8rem;
+  font-weight: 700;
+  background-color: $color;
+  width: 264px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid $border-color;
+  border-radius: 30px;
+  margin: 0 auto;
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin button46 {
+  font-size: .7rem;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+}
+
+@mixin sale-icon32 {
+  content: "%";
+  position: absolute;
+  font-size: .9rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #F33F3F;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  left: 20px;
+  top: 20px;
+}
+
+@mixin sale-icon44 {
+  font-size: 1.1rem;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  left: 17px;
+  top: 22px;
+}
+
+@mixin round-button($size, $color) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+  border-radius: 50%;
+}

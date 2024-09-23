@@ -1,0 +1,16 @@
+.paragraph {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .paragraph {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .paragraph {
+    font-size: .8rem;
+  }
+}

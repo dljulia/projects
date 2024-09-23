@@ -1,0 +1,72 @@
+.main {
+  padding: 340px 0 40px;
+
+  &__title {
+    font-size: 3.6rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    margin: 50px 0;
+  }
+
+  &__pointer::before {
+    content: "";
+    display: block;
+    background-image: url(../img/pointer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 20px;
+    margin: 280px auto 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    padding-top: 256px;
+  
+    &__title {
+      font-size: 3.4rem;
+      max-width: 598px;
+      margin: 0 auto;
+    }
+  
+    &__text {
+      font-size: 1rem;
+      margin: 45px 0 70px;
+    }
+  
+    &__pointer::before {
+      width: 45px;
+      height: 20px;
+      margin: 273px auto 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 90px;
+  
+    &__text {
+      max-width: 643px;
+      margin: 22px auto 84px;
+    }
+  
+    &__pointer::before {
+      width: 40px;
+      height: 20px;
+      margin: 76px auto 0;
+    }
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    &__title {
+      font-size: 2.5rem;
+    }
+  }
+}
+

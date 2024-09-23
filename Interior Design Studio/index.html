@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/681796284a.js" crossorigin="anonymous"></script>
+  <link href="https: //fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Interior Design Studio</title>
+</head>
+
+<body>
+  <div class="banner">
+    <header class="header" id="top">
+      <div class="header__wrap">
+        <a class="header__logo logo" href="#">SPHERE</a>
+        <nav class="navigation">
+          <a class="navigation__item" href="#our-services">УСЛУГИ</a>
+          <a class="navigation__item" href="#our-tariffs">ЦЕНЫ</a>
+          <a class="navigation__item" href="#contacts">КОНТАКТЫ</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main">
+      <h1 class="main__title">Студия дизайна интерьера</h1>
+      <p class="main__text">Дизайн квартир и общественных пространств в современном стиле</p>
+      <a class="main__button button button--orange" href="#our-tariffs">Заказать проект</a>
+      <a class="main__pointer" href="#our-tariffs" aria-label="Заказать проект"></a>
+    </section>
+  </div>
+
+  <main>
+    <section class="our-services" id="our-services">
+      <h2 class="our-services__title heading">Наши услуги</h2>
+      <p class="our-services__text paragraph">Мы создаем функциональные дизайнерские проекты от маленьких до больших пространств</p>
+
+      <div class="services">
+        <article class="service-card">
+          <h3 class="service-card__title">Интерьер квартир</h3>
+          <p class="service-card__text">Мы проектируем интерьеры больших и маленьких квартир. Мы знаем, как создать уют в любой комнате.</p>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Интерьер частных домов</h3>
+          <p class="service-card__text">Мы делаем дизайн для частных домов любого размера и планировки. Создаем уютную обстановку.</p>
+        </article>
+
+        <article class="service-card">
+          <h3 class="service-card__title">Авторский надзор</h3>
+          <p class="service-card__text">Мы заботимся обо всем, что связано с проектом: будь то подрядчики по строительству или инженерные работы.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-studio">
+      <h2 class="about-studio__title heading">О нашей студии</h2>
+      <div class="about-studio__image">
+        <img src="./img/staff.png" alt="Фото сотрудников">
+      </div>
+      <p class="about-studio__description">Sphere — это команда дизайнеров интерьера, мы работаем вместе уже более 5 лет. Мы знаем все нюансы дизайна и строительства и создаем функциональное пространство для наших клиентов.</p>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="portfolio__title heading">Портфолио</h2>
+      <p class="portfolio__text paragraph">Фрагменты наших избранных проектов</p>
+      <div class="interior-images">
+        <div class="interior-images__item">
+          <img src="./img/dining_room_design.png" alt="Фото интерьера обеденной зоны">
+        </div>
+        <div class="interior-images__item">
+          <img src="./img/living_room_design.png" alt="Фото интерьера гостиной">
+        </div>
+        <div class="interior-images__item">
+          <img src="./img/room_design.png" alt="Фото интерьера комнаты">
+        </div>
+        <div class="interior-images__item">
+          <img src="./img/billiard_room_design.png" alt="Фото интерьера бильярдной комнаты">
+        </div>
+      </div>
+      <a class="portfolio__button button button--black" href="#">Смотреть все проекты</a>
+    </section>
+
+    <section class="our-tariffs" id="our-tariffs">
+      <h2 class="our-tariffs__title heading">Наши тарифы</h2>
+      <p class="our-tariffs__text paragraph">Выберите тариф, который подходит вам, свяжитесь с нами и закажите дизайн-проект.</p>
+      
+      <div class="tariffs">
+        <article class="tariff-card">
+          <h3 class="tariff-card__title subtitle">Базовый</h3>
+          <span class="tariff-card__price">5 000 руб/м<sup>2</sup></span>
+          <ul class="tariff-card__content">
+            <li class="tariff-card__content-item">Два планировочных решения</li>
+            <li class="tariff-card__content-item"> 3D-визуализация всех комнат</li>
+            <li class="tariff-card__content-item">Рабочая документация</li>
+          </ul>
+          <a class="tariff-card__button button button--orange" href="#form">Заказать проект</a>
+        </article>
+
+        <article class="tariff-card tariff--shadow tariff--sticker">
+          <h3 class="tariff-card__title subtitle">Стандартный</h3>
+          <span class="tariff-card__price">10 000 руб/м<sup>2</sup></span>
+          <ul class="tariff-card__content">
+            <li class="tariff-card__content-item">Четыре планировочных решения</li>
+            <li class="tariff-card__content-item">3D -визуализация всех комнат</li>
+            <li class="tariff-card__content-item">Рабочая документация</li>
+            <li class="tariff-card__content-item">Спецификация мебели</li>
+          </ul>
+          <a class="tariff-card__button button button--orange" href="#form">Заказать проект</a>
+        </article>
+
+        <article class="tariff-card">
+          <h3 class="tariff-card__title subtitle">Премиум</h3>
+          <span class="tariff-card__price">15 000 руб/м<sup>2</sup></span>
+          <ul class="tariff-card__content">
+            <li class="tariff-card__content-item">Четыре планировочных решения</li>
+            <li class="tariff-card__content-item">3D -визуализация всех комнат</li>
+            <li class="tariff-card__content-item">Рабочая документация</li>
+            <li class="tariff-card__content-item">Работа с подрядчиками</li>
+          </ul>
+          <a class="tariff-card__button button button--orange" href="#form">Заказать проект</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-we-work">
+      <h2 class="how-we-work__title heading">Как мы работаем</h2>
+      <div class="work-plan">
+        <article class="plan-item">
+          <span class="plan-item__icon" aria-hidden="true"></span>
+          <div class="plan-item__description">
+            <h3 class="plan-item__title subtitle">Предварительный эскиз</h3>
+            <p class="plan-item__text">Определение стилистического решения интерьера, подготовка технических заданий, планировочных решений, коллажей для всех помещений.</p>  
+          </div>
+        </article>
+
+        <article class="plan-item">
+          <span class="plan-item__icon" aria-hidden="true"></span>
+          <div class="plan-item__description">
+            <h3 class="plan-item__title subtitle">Визуализация проекта</h3>
+            <p class="plan-item__text">Детальная визуализация каждой комнаты. 3D-изображения учитывают ранее выбранные элементы интерьера и отделочные материалы.</p>  
+          </div>
+        </article>
+
+        <article class="plan-item">
+          <span class="plan-item__icon" aria-hidden="true"></span>
+          <div class="plan-item__description">
+            <h3 class="plan-item__title subtitle">Рабочая документация</h3>
+            <p class="plan-item__text">Создание рабочей документации для проекта дизайна интерьера: спецификации и планировочное решение с мебелью.</p>  
+          </div>
+        </article>
+
+        <article class="plan-item">
+          <span class="plan-item__icon" aria-hidden="true"></span>
+          <div class="plan-item__description">
+            <h3 class="plan-item__title subtitle">Авторский надзор</h3>
+            <p class="plan-item__text">Контроль соответствия строительных работ проектному плану. Наш дизайнер и инженер регулярно посещают объект и все контролируют. Мы осуществляем и закупку материалов.</p>  
+          </div>
+        </article>
+
+      </div>
+      <form class="form" id="form">
+        <h4 class="form__title">Обратный звонок</h4>
+        <input class="form__input" type="text" name="name" id="userName" placeholder="Ваше имя">
+        <input class="form__input" type="tel" name="phone" id="userPhone" pattern="+[0-9] ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+1 (123) ___-__-__">
+        <a class="form__button button button--orange" href="#">Перезвоните мне</a>
+      </form>
+    </section>
+  </main>
+
+  <footer class="contacts" id="contacts">
+    <div class="contacts__wrap">
+      <a class="contacts__logo logo" href="#top">SPHERE</a>
+      <div class="social-links">
+        <a class="social-links__item" href="https://www.facebook.com/?locale=ru_RU" aria-label="Ссылка на страницу в Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a class="social-links__item" href="https://x.com/?lang=ru" aria-label="Ссылка на страницу в Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="social-links__item" href="https://www.instagram.com/" aria-label="Ссылка на страницу в Instagram">
+          <i class="fa-brands fa-instagram"></i>  
+        </a>
+      </div>
+      <ul class="info">
+        <li class="info__item">
+          <a href="tel:+11234567890">+1 123 456 78 90</a>
+        </li>
+        <li class="info__item">
+          <a href="mailto:hello@sphere.com">hello@sphere.com</a>
+        </li>
+      </ul>      
+    </div>
+  </footer>
+
+  <a class="scroll-up" href="#top" aria-label="Вернуться в начало сайта">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+</body>
+
+</html>
